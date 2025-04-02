@@ -1,0 +1,118 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Add padding to avoid content touching the edges on small screens */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    overflow: auto; /* Allow scrolling on smaller screens */
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Make container width 100% */
+    max-width: 600px; /* Limit the maximum width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: auto; /* Allow scrolling within the container */
+}
+
+.container ul {
+    text-align: left; /* Ensure list items are left-aligned */
+    padding-left: 20px; /* Optional: Add padding to indent the list */
+}
+
+.container ul li {
+    text-align: left; /* Ensure list items are left-aligned */
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.rules {
+    margin-bottom: 20px;
+}
+
+.agreement {
+    margin-bottom: 20px;
+}
+
+.agreement input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.explore-btn:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.scenario-text {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+hr {
+    border: 1px solid #00ff00; /* Match the color of the box */
+    width: 100%; /* Optional: Adjust the width as needed */
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: left; /* Align footer links to the left */
+}
+
+.footer-link {
+    color: #00ff00;
+    text-decoration: none;
+    display: block; /* Ensure links are displayed one below the other */
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    text-align: right; /* Align footer links to the right */
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .title {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .explore-btn {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+
+    .scenario-text {
+        font-size: 0.9em; /* Adjust text size for better readability on smaller screens */
+    }
+
+    .footer-link {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+}
